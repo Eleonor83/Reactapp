@@ -8,15 +8,14 @@ html,body {
   line-height: 1.5;
 }
 
-wrapper-grid {
-  height: 100dvh;
+#root {
+  width: 100%
+}
+
+.wrapper-grid {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-
-  /* height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto; */
 }
 
 .btn-yellow {
