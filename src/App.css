@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&family=Inter:wght@300;400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
 html,body {
   color: #191919;
   font-family: "Inter", sans-serif;
@@ -9,7 +14,7 @@ html,body {
 }
 
 #root {
-  width: 100%
+  width: 100%;
 }
 
 .wrapper-grid {
@@ -509,15 +514,15 @@ header .container .menu .btn-login {
 .our-services {
   background-color: #F0EFE9;
   height: 870px;
-  display: flex;
+  position: relative;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
 .our-services .container {
   display: flex;
   flex-direction: column;
   height: 650px;
-  position: relative;
 }
 .our-services .container .button {
   align-self: flex-end;
@@ -576,7 +581,7 @@ header .container .menu .btn-login {
   background-color: #FFFFFF;
   color: #191919;
 }
-.our-services .background-lines {
+.our-services .backgroundlines {
   position: absolute;
   bottom: 0;
   right: 0;
