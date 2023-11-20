@@ -1,5 +1,6 @@
 import React from 'react'
 import critologo from '../assets/images/logotype.svg'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -7,9 +8,9 @@ const Header = () => {
     <div className="container">
        <button className="btnmenu-bars"> <i className="fa-solid fa-bars-staggered"></i> </button>
        <div className="logotype">
-          <a href="index.html">
-             <img className='critologo' src={critologo} alt="crito-logotype" />
-             </a>
+       <Link to="/">
+            <img className='critologo' src={critologo} alt="crito-logotype" />
+          </Link>
        </div>
        <div className="contactinformation-bar">
           <div className="content-box">
@@ -32,13 +33,13 @@ const Header = () => {
           <a href="https://linkedin.com/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
        </div>
        <div className="menu">
-          <nav>
-             <a className="active" href="index.html">Home</a>
-             <a href="services.html">Service</a>
-             <a href="news.html">News</a>
-             <a href="contact.html">Contact</a>
+       <nav>
+            <Link to="/" className="active">Home</Link>
+            <Link to="/services">Service</Link>
+            <Link to="/news">News</Link>
+            <Link to="/contact">Contact</Link>
           </nav>
-          <a className="btn-yellow btn-login" href="login.html">Login<i className="fa-regular fa-arrow-up-right"></i></a>
+          <Link to="/login" className="btn-yellow btn-login">Login<i className="fa-regular fa-arrow-up-right"></i></Link>
        </div>
     </div>
  </header>
