@@ -1308,6 +1308,18 @@ footer .bottom .socialmedia-bar a:hover {
   margin-top: 40px;
 }
 
+.form_section .error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.form_section .success-message {
+  color: #191919;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
 .map iframe {
   width: 100%;
   height: 600px;
